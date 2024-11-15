@@ -9,3 +9,6 @@ body {
 header img{
     height: 100%;
 }
+#home{
+    background-color: aqua;
+}
