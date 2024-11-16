@@ -3,12 +3,120 @@
     padding:0;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif;  
+    background: rgb(195,174,238);
+    background: linear-gradient(90deg, rgba(195,174,238,1) 0%, rgba(28,7,7,1) 100%);
 }
 header img{
     height: 100%;
 }
 #home{
-    background-color: aqua;
+   
 }
+#blog{
+    display: flex;
+}
+.blog-container{
+    justify-content: center;
+}
+footer a img {
+    filter: invert(100%); 
+
+}
+
+footer a img:hover {
+    transform: scale(1.1); 
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+}
+.card-blog {
+    width: 45% !important;
+}
+
+.card {
+    flex: 1 1 calc(20% - 20px);
+    max-width: calc(20% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.section-container{
+    background-color: #DBD3D3;
+    padding: 16px;
+    border: none;
+    border-radius: 20px;
+}
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: #a07ee4;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #bfafe0;
+}
+@media (max-width: 768px) {
+    .card-blog {
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .card-blog img {
+        height: auto;
+        max-height: 200px;
+    }
+    .card-blog {
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .card-blog img {
+        height: auto;
+        max-height: 200px;
+    }
+    .card-container {
+        flex-wrap: wrap; 
+    }
+    .card-container .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .container{
+        max-width: 90%;
+    }
+}   

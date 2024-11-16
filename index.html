@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azabarte</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navegación -->
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <img src="./logo.png">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <img src="./assets/logo.png">
             <div class="container">
                 <a class="navbar-brand" href="#" id="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -32,107 +30,137 @@
         </nav>
     </header>
 
-    <!-- Sección Home -->
-    <section id="home" class="py-5 text-center">
-        <div class="container">
-            <h1>Bienvenidos a Arte de [Nombre]</h1>
+
+    <section id="home" class="section py-5 text-center">
+        <div class="container section-container">
+            <h1>Bienvenidos a Azabarte</h1>
             <p class="lead">Descubre joyería artesanal y mucho más :)</p>
-            <a href="#tienda" class="btn btn-primary">Explorar Tienda</a>
+            <a href="#tienda" class="btn">Quiero comprar algo</a>
         </div>
     </section>
 
-    <!-- Sección Bio -->
-    <section id="bio" class="py-5 bg-light">
-        <div class="container">
+
+    <section id="bio" class="section py-5">
+        <div class="container section-container">
             <h2 class="text-center">Sobre Mí</h2>
-            <p class="text-center">[Aquí puedes escribir una breve descripción de tu mamá, su historia y su arte.]</p>
+            <p class="text-center">Mi nombre es Carmen Vargas, y llevo más de 15 años trabajando con azabache, un material lleno de historia y simbolismo. A lo largo de mi trayectoria, he tenido el honor de colaborar con comunidades indígenas del estado Amazonas en Venezuela, de quienes obtengo piezas talladas con dedicación y maestría. Con estas joyas únicas, combino técnicas tradicionales como el tejido de macramé para crear accesorios que cuentan historias y celebran la conexión entre cultura, arte y naturaleza.</p>
             <div class="row mt-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127054.57159641976!2d-67.74572021007737!3d5.647064095708562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e75ec44f4661dd1%3A0x86c0e994f90d208f!2sPuerto%20Ayacucho%207101%2C%20Amazonas%2C%20Venezuela!5e0!3m2!1ses!2sar!4v1731716673573!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="col-md-6">
-                    <img src="img/bio.jpg" alt="Foto de [Nombre]" class="img-fluid rounded">
-                </div>
-                <div class="col-md-6">
-                    <p>[Texto adicional sobre sus técnicas, materiales y lo que la inspira.]</p>
+                    <p></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Blog -->
-    <section id="blog" class="py-5">
-        <div class="container">
+
+    <section class="section">
+        <div class="container section-container">
             <h2 class="text-center">Blog</h2>
             <p class="text-center">Explora nuestras historias, técnicas y novedades.</p>
             <div class="row mt-4">
-                <!-- Artículo de muestra -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="img/blog1.jpg" class="card-img-top" alt="Título del artículo">
+               
+                <div class="blog-container" id="blog">
+                    <div class="card card-blog">
+                        <img src="./assets/azabache.jpg" class="card-img-top" alt="mundoazabache">
                         <div class="card-body">
-                            <h5 class="card-title">Título del Artículo</h5>
-                            <p class="card-text">Resumen breve del artículo...</p>
-                            <a href="#" class="btn btn-primary">Leer más</a>
+                            <h5 class="card-title">El Fascinante Mundo del Azabache</h5>
+                            <p class="card-text">El azabache, una forma fosilizada de madera de coníferas, se forma tras millones de años de carbonización bajo presión. Conocido por su color negro profundo, es altamente valorado desde la antigüedad. Los egipcios lo usaban en amuletos para protección, y en Europa medieval era símbolo de fe y defensa contra el mal de ojo. Sus principales depósitos están en España y Turquía. Hoy, el azabache combina tradición y modernidad, siendo clave en joyería artesanal y amuletos llenos de historia y simbolismo.</p>
+                            <a href="#" class="btn">Leer más</a>
                         </div>
                     </div>
                 </div>
-                <!-- Repite para más artículos -->
+                
             </div>
         </div>
     </section>
 
-    <!-- Sección Tienda -->
-    <section id="tienda" class="py-5 bg-light">
-        <div class="container">
+    
+    <section id="tienda" class="py-5">
+        <div class="container section-container">
             <h2 class="text-center">Tienda</h2>
             <p class="text-center">Descubre nuestras piezas únicas hechas a mano.</p>
-            <div class="row mt-4">
-                <!-- Producto de muestra -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="img/product1.jpg" class="card-img-top" alt="Nombre del Producto">
-                        <div class="card-body">
-                            <h5 class="card-title">Nombre del Producto</h5>
-                            <p class="card-text">Descripción breve...</p>
-                            <p class="card-text"><strong>$Precio</strong></p>
-                            <a href="#contacto" class="btn btn-primary">Comprar</a>
-                        </div>
+    
+          
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/products/item1.png" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Pulsera de Azabache</h5>
+                        <p class="card-text">$30.00</p>
+                        <a href="#contacto" class="btn">Comprar</a>
                     </div>
                 </div>
-                <!-- Repite para más productos -->
+                <div class="card">
+                    <img src="./assets/products/item1.png" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Tobillera Artesanal</h5>
+                        <p class="card-text">$45.00</p>
+                        <a href="#contacto" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/products/item1.png" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Tobillera Artesanal</h5>
+                        <p class="card-text">$25.00</p>
+                        <a href="#contacto" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/products/item2.png" alt="Producto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Tobillera Artesanal</h5>
+                        <p class="card-text">$20.00</p>
+                        <a href="#contacto" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/products/item2.png" alt="Producto 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Pulsera de Azabache</h5>
+                        <p class="card-text">$35.00</p>
+                        <a href="#contacto" class="btn">Comprar</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    
 
-    <!-- Sección Contacto -->
-    <section id="contacto" class="py-5">
-        <div class="container">
+
+    <section id="contacto" class="section py-5">
+        <div class="container section-container">
             <h2 class="text-center">Contacto</h2>
-            <p class="text-center">¿Tienes alguna pregunta? ¡Escríbeme!</p>
+            <p class="text-center">Dime qué artículo te gusta y a donde te lo envío :)</p>
             <form class="mt-4" action="https://formspree.io/f/mnnqvkjd" method="POST">
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                    <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" name="nombre">
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" placeholder="Tu correo">
+                    <input type="email" class="form-control" id="email" placeholder="Tu correo" name="correo">
                 </div>
                 <div class="mb-3">
                     <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" rows="5" placeholder="Tu mensaje"></textarea>
+                    <textarea class="form-control" id="mensaje" rows="5" placeholder="Tu mensaje" name="mensaje"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn">Enviar</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="text-center py-3 bg-dark text-light">
-        <p>© 2024 Arte de [Nombre]. Todos los derechos reservados.</p>
+        <p>© 2024 Azabarte. Todos los derechos reservados.</p>
+        
+        <div id="social">
+            <a href="https://www.instagram.com/azabaches_cc/" target="">
+                <img src="./assets/instagram-icon-svgrepo-com.svg" alt="Instagram" width="24" height="24">
+            </a> <br> <br>
+            <a href="https://www.linkedin.com/in/cesar-labrador/">Hecho por Cesar Labrador</a>
+        </div>
     </footer>
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- JavaScript personalizado -->
-    <script src="script.js"></script>
 </body>
 </html>
