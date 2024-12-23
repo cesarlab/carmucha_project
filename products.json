@@ -1,0 +1,37 @@
+[
+{
+    "name":"Tobillera",
+    "price":20,
+    "image":"assets/products/item1.png",
+    "unit":"USD",
+    "symbol":"$"
+},
+{
+    "name":"Pulsera con rojo",
+    "price":25,
+    "image":"./assets/products/item2.png",
+    "unit":"USD",
+    "symbol":"$"
+},
+{
+    "name":"Tobillera de Corazón",
+    "price":30,
+    "image":"./assets/products/item3.png",
+    "unit":"USD",
+    "symbol":"$"
+},
+{
+    "name":"Collar con Puñito",
+    "price":50,
+    "image":"./assets/products/item4.png",
+    "unit":"USD",
+    "symbol":"$"
+},
+{
+    "name":"Collar",
+    "price":65,
+    "image":"./assets/products/item5.png",
+    "unit":"USD",
+    "symbol":"$"
+}
+]

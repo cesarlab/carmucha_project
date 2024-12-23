@@ -1,0 +1,22 @@
+# Ignore system folders and files
+**/Application Data/
+**/Cookies/
+**/Documents/
+**/Downloads/
+**/Favorites/
+**/Links/
+**/Music/
+**/OneDrive/
+**/Saved Games/
+**/Searches/
+**/Videos/
+**/flutter/
+**/.android/
+**/.bash_history
+**/.gitconfig
+**/.lesshst
+**/.minttyrc
+**/.vscode/
+**/NTUSER.DAT*
+**/ntuser.dat.LOG*
+**/ntuser.ini

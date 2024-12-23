@@ -11,7 +11,11 @@ header img{
     height: 100%;
 }
 #home{
-   
+   height: 45%;
+}
+#home-img{
+    background-image: url(./assets/home-background.jpg);
+    
 }
 #blog{
     display: flex;
@@ -27,7 +31,18 @@ footer a img {
 footer a img:hover {
     transform: scale(1.1); 
 }
-
+#tienda{
+    display: flex;
+}
+#tienda .card{
+    flex: 1 1 calc(20% - 20px);
+    max-width: calc(20% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 .card-container {
     display: flex;
     flex-wrap: wrap; 
@@ -44,7 +59,6 @@ footer a img:hover {
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -120,3 +134,4 @@ footer a img:hover {
         max-width: 90%;
     }
 }   
+
