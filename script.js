@@ -43,9 +43,9 @@ fetch('./products.json')
     data.forEach((elemento) => {
         
         const productContainerCreated = document.createElement("div")
-        productContainerCreated.classList.add("card-container")
+        productContainerCreated.classList.add("card")
         productContainerCreated.innerHTML = `
-        <div class="card">
+        <div class="card-container">
         <img src="${elemento.image}">
         <div class="card-body">
                         <h5 class="card-title">${elemento.name}</h5>

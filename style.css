@@ -33,6 +33,15 @@ footer a img:hover {
 }
 #tienda{
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+.container{
+    border: 2px;
+    border-color: white;
+    border-spacing: 5px;
 }
 #tienda .card{
     flex: 1 1 calc(20% - 20px);
@@ -54,7 +63,7 @@ footer a img:hover {
 }
 
 .card {
-    flex: 1 1 calc(20% - 20px);
+    flex: 1 1 calc(20% - 20px );
     max-width: calc(20% - 20px);
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -102,12 +111,40 @@ footer a img:hover {
 .btn:hover {
     background-color: #bfafe0;
 }
+
+@media (max-width: 1024px) {
+    #tienda .card {
+        flex: 1 1 calc(33.33% - 20px); /* 3 cards per row for medium screens */
+        max-width: calc(33.33% - 20px);
+    }
+}
+
 @media (max-width: 768px) {
+    #home{
+        color: white;
+     }
     .card-blog {
         max-width: 90%;
         margin: 0 auto;
         text-align: center;
     }
+    #tienda .card{
+        flex: 1 1 calc(100% - 20px);
+        max-width: calc(100%);
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+@media (max-width: 480px) {
+    #tienda .card {
+        flex: 1 1 100%; /* 1 card per row for small screens */
+        max-width: 100%;
+    }
+}
+
 
     .card-blog img {
         height: auto;
@@ -122,16 +159,6 @@ footer a img:hover {
         height: auto;
         max-height: 200px;
     }
-    .card-container {
-        flex-wrap: wrap; 
-    }
-    .card-container .card {
-        flex: 1 1 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-    .container{
-        max-width: 90%;
-    }
+  
 }   
 
